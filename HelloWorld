@@ -1,0 +1,16 @@
+pragma solidity ^0.4.0;
+contract Greeter {
+    string public name;
+    
+    function Greeter() public {
+        name = "World !";
+    }
+    
+    function set(string urname) public {
+        name = urname;
+    }
+    
+    function print() constant public returns(string) {
+        return name;
+    }
+}
